@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activitirs.DetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="290dp"
+            android:layout_margin="16dp"
+            android:background="@drawable/gray_background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+        <ImageView
+            android:id="@+id/detailImage"
+            android:layout_width="283dp"
+            android:layout_height="257dp"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/pic1" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view">
+
+            <TextView
+                android:id="@+id/detailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="MacBook Pro M2 chip"
+                android:textColor="#000000"
+                android:textSize="23dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/detailPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$535"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/star" />
+
+            <TextView
+                android:id="@+id/rateTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="4.0"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:text="Rating"
+                android:textColor="@color/black" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                app:srcCompat="@drawable/review" />
+
+            <TextView
+                android:id="@+id/detailQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="10"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Reviews"
+                android:textColor="@color/black" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/detailDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Lorem ke a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.clans.fab.FloatingActionMenu
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                app:menu_fab_size="normal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="20dp"
+                app:menu_colorPressed="@color/lavender"
+                app:menu_colorNormal="@color/lavender"
+                app:menu_icon="@drawable/_637785_menu_option_setting_icon"
+                app:menu_openDirection="up"
+                app:menu_showShadow="true">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/editButton"
+                    android:src="@drawable/_402417_refresh_rotate_sync_update_reload_icon"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/green"
+                    app:fab_size="mini"/>
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deleteButton"
+                    android:src="@drawable/_669361_delete_ic_icon"
+                    app:fab_showShadow="true"
+                    app:fab_colorNormal="@color/red"
+                    app:fab_size="mini"/>
+
+            </com.github.clans.fab.FloatingActionMenu>
+
+        </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+<!--<LinearLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".activitirs.DetailActivity">-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:id="@+id/detailTitle"-->
+<!--        android:text="Title"-->
+<!--        android:layout_marginTop="14dp"-->
+<!--        android:textSize="24sp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="12dp"-->
+<!--        android:textColor="@color/lavender"/>-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="400dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        android:id="@+id/detailImage"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:src="@drawable/uploadimg"-->
+<!--        android:scaleType="fitXY"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Price"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/detailPrice"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/lavender"/>-->
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Qty"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/detailQty"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/lavender"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="Description"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:id="@+id/detailDesc"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@color/lavender"/>-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
+
+<!--        <com.github.clans.fab.FloatingActionMenu-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            app:menu_fab_size="normal"-->
+<!--            android:layout_marginBottom="20dp"-->
+<!--            android:layout_marginEnd="20dp"-->
+<!--            app:menu_colorPressed="@color/lavender"-->
+<!--            app:menu_colorNormal="@color/lavender"-->
+<!--            app:menu_icon="@drawable/baseline_remove_circle_24"-->
+<!--            app:menu_openDirection="up"-->
+<!--            app:menu_showShadow="true">-->
+
+<!--            <com.github.clans.fab.FloatingActionButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/editButton"-->
+<!--                android:src="@drawable/baseline_add_alert_24"-->
+<!--                app:fab_showShadow="true"-->
+<!--                app:fab_colorNormal="@color/green"-->
+<!--                app:fab_size="mini"/>-->
+
+<!--            <com.github.clans.fab.FloatingActionButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:id="@+id/deleteButton"-->
+<!--                android:src="@drawable/ic_android_black_24dp"-->
+<!--                app:fab_showShadow="true"-->
+<!--                app:fab_colorNormal="@color/red"-->
+<!--                app:fab_size="mini"/>-->
+
+<!--        </com.github.clans.fab.FloatingActionMenu>-->
+
+<!--    </RelativeLayout>-->
+
+<!--</LinearLayout>-->

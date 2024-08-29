@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "108736732953",
+    "project_id": "sb-mobile-shop",
+    "storage_bucket": "sb-mobile-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:108736732953:android:eda3aa4bb5ae6160f22f88",
+        "android_client_info": {
+          "package_name": "com.example.sbmobileshop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVg27pm19Sf0WJZKDi7hGPY1w3TICiYAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
